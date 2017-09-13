@@ -1,0 +1,11 @@
+{
+  "name": "webpack-static-html-build-kit",
+  "version": "1.0.0",
+  "description": "Static bootstrap html development kit using webpack build packages",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "sangeeth ks",
+  "license": "ISC"
+}

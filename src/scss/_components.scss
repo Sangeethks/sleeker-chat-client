@@ -1,0 +1,50 @@
+//  icons
+.sl-ico {
+    width: 20px;
+}
+.online-tag {
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+    border-radius: 50%;
+    margin-right: 6px;
+}
+.online-tag.online {
+    background-color: $color-green;
+}
+.online-tag.offline {
+    background-color: red;
+}
+
+//  text
+.text-sm {
+    font-size: 14px;
+}
+.text-b {
+    font-weight: bold;
+}
+
+//  images
+.sl-round-img {
+    border-radius: 50%;
+}
+.sl-lg-img {
+    width: 80px;
+    height: 80px;
+    @extend .sl-round-img;
+}
+.sl-md-img {
+    width: 80px;
+    height: 80px;
+    @extend .sl-round-img;
+}
+.sl-sm-img {
+    width: 60px;
+    height: 60px;
+    @extend .sl-round-img;
+}
+.sl-xs-img {
+    width: 40px;
+    height: 40px;
+    @extend .sl-round-img;
+}

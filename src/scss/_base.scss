@@ -1,0 +1,34 @@
+$font-primary: 'Roboto', sans-serif;
+$color-blue: #2371e6;
+$color-blue-vlight: #f2f6ff;
+$color-blue-light: #7eabef;
+$color-green: #2ec001;
+$color-grey: #b3b2b2;
+$color-grey-light: #f5f5f5;
+$color-grey-vlight: #fafafa;
+$color-black: #312e2e;
+$color-orange: #f5aa30;
+
+* {
+    margin: 0;
+}
+body {
+    font-family: $font-primary;
+}
+ul, li {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.clearfix {
+    clear: both;
+}
+.navbar-left-sec {
+    float: left;
+    .form-group {
+    width: 600px;
+}
+}
+.navbar-right-sec {
+    float: right;
+}

@@ -1,10 +1,12 @@
 .sl-sidebar {
     width: 250px;
     box-shadow: 1px 1px 6px $color-grey;
+    position: fixed;
+    height: 100%;
 }
 .sl-profile-sec {
     text-align: center;
-    padding: 30px 0;
+    padding: 90px 0 30px;
     .sl-lg-img {
         margin-bottom: 10px;
     }

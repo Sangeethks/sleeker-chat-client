@@ -20,8 +20,18 @@
 .text-sm {
     font-size: 14px;
 }
+.text-xs {
+    font-size: 12px;
+}
+.text-fade {
+    color: $color-grey;
+}
 .text-b {
     font-weight: bold;
+}
+.sp-label {
+    color: $color-grey;
+    font-weight: 600;
 }
 
 //  images
@@ -34,17 +44,90 @@
     @extend .sl-round-img;
 }
 .sl-md-img {
-    width: 80px;
-    height: 80px;
+    width: 45px;
+    height: 45px;
     @extend .sl-round-img;
 }
 .sl-sm-img {
-    width: 60px;
-    height: 60px;
+    width: 30px;
+    height: 30px;
     @extend .sl-round-img;
 }
 .sl-xs-img {
-    width: 40px;
-    height: 40px;
+    width: 20px;
+    height: 20px;
     @extend .sl-round-img;
+}
+
+//  forms
+.sl-fcheckbox {
+    position: relative;
+    input[type=checkbox] {
+        visibility: hidden;
+        &:checked {
+            & + label {
+                color: $color-blue;
+                &::before {
+                    background-color: $color-blue;
+                }
+                &::after {
+                    position: absolute;
+                    content: '✓';
+                    color: #FFFFFF;
+                    left: 1px;
+                    top: 3px;
+                }
+            }
+        }
+    }
+    label {
+        margin-left: 10px;
+        cursor: pointer;
+        &::before {
+            position: absolute;
+            content: '';
+            left: 0;
+            top: 5px;
+            width: 14px;
+            height: 14px;
+            border: 2px solid $color-blue;
+            border-radius: 3px;
+        }
+    }
+}
+.btn-prim {
+    background-color: $color-blue;
+    color: #FFFFFF;
+    font-weight: 600;
+    &:hover {
+        color: #FFFFFF;
+    }
+}
+.sl-btn-normal {
+    padding: 12px 50px;
+}
+
+// chat
+.sl-type-bubble {
+    background-color: white;
+    padding: 7px 15px;
+    display: inline-block;
+    border-radius: 20px;
+    @extend .sl-box-shadow;
+    span {
+        width: 5px;
+        height: 5px;
+        background-color: $color-green;
+        display: inline-block;
+        border-radius: 50%;
+        margin-right: 2px;
+        vertical-align: middle;
+        &:nth-child(2) {
+            width: 8px;
+            height: 8px;
+        }
+        &:last-child {
+            margin: 0;
+        }
+    }
 }

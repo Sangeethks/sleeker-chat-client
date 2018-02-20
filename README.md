@@ -10,4 +10,5 @@
 
 &nbsp;&nbsp;&nbsp;
 
-![webpack](https://cdn.dribbble.com/users/336943/screenshots/4233146/ezgif.com-optimize__6_.gif)
+#### Design
+![webpack](https://github.com/Sangeethks/sleeker-chat-client/blob/master/design/ui_messages.png)
